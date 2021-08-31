@@ -1,5 +1,16 @@
 AOS.init();
 
+function copyAccount(val) {
+  /* Get the text field */
+  /* Copy the text inside the text field */
+  navigator.clipboard.writeText(val);
+  
+}
+
+$('.ui.accordion')
+  .accordion()
+;
+
 $('.tool-tip').popup();
 
 function bg_change(color) {

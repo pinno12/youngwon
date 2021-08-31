@@ -2,12 +2,26 @@
     margin-right: 1.5em;
 }
 
+
+#welcome{
+    background-image: url('img/card.png');
+    background-size: cover;
+}
+
 .main.container {
     margin-top: 7em;
 }
 
 .wireframe {
     margin-top: 2em;
+}
+
+/* div{
+    cursor: url('img/cake.png'), auto;
+ } */
+
+ div {
+   cursor: url(img/heart-c.png), auto;
 }
 
 .ui.footer.segment {
@@ -25,12 +39,13 @@
     color: #63666A;
 }
 
-.text-yellow-e {
-    color: #FFB81C !important;
+.text-here {
+    color: #FDE0DC !important;
 }
 
-.bg-e {
-    background-color: #FFB81C !important;
+.bg-here {
+    background-color: #FDE0DC !important;
+    
 }
 
 @media (min-width: 768px) {
@@ -38,11 +53,15 @@
         font-size: 3.5rem;
     }
 }
+body {
+    position: relative; 
+  }
+/* a.nav-link,  */
+.ui.header, h1, h2, h3, h4, h5, h6,html, body {
+    font-family: 'Nanum Myeongjo', serif;
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: "Noto Sans KR", Georgia, "Times New Roman", serif;
 }
-
+/* font-family: 'Gamja Flower', cursive; */
 .nav-scroller {
     position: relative;
     overflow-y: hidden;
@@ -57,7 +76,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a:hover {
-    /* background-color:#FFB81C ; */
+    /* background-color:#FDE0DC ; */
     text-decoration: underline;
     color: #63666A !important;
 }
@@ -94,6 +113,9 @@ a {
     /* text-decoration:underline; */
 }
 
+.nav-link{
+    color: dimgray
+}
 .full-height {
     height: 100%;
 }
@@ -159,6 +181,10 @@ a {
 }
 
 /* INDEX */
+.box{
+    height:100vh; 
+    overflow-y: scroll;
+}
 
 .carousel-inner {
     height: 100%;
@@ -177,7 +203,18 @@ a {
     color:white;
 }
 
+#sidebar{
+    width:50%;
+}
+
+/* 모바일  */
 @media only screen and (max-width: 992px) {
+
+    #sidebar{
+        width: 100%;
+        position: inherit;
+    }
+    
 
     
     .service  h1,
@@ -221,7 +258,7 @@ a {
 
 ::selection {
     color: #63666A;
-    background: #FFB81C;
+    background: #FDE0DC;
 }
 
 .ui.button.items {
@@ -232,7 +269,7 @@ a {
 }
 
 .ui.button.items:hover {
-    background: #FFB81C;
+    background: #FDE0DC;
 }
 
 .service {
@@ -241,7 +278,7 @@ a {
 
 .circle-icon {
     background: #63666A;
-    color: #FFB81C;
+    color: #FDE0DC;
 }
 
 .carousel-item {
@@ -293,7 +330,7 @@ a {
 }
 
 .accordion-button:focus {
-    border-color: #FFB81C;
+    border-color: #FDE0DC;
     box-shadow: none;
 }
 
@@ -329,7 +366,7 @@ a {
 }
 
 .wrapper label.has-value {
-    color: #FFB81C;
+    color: #FDE0DC;
     top: 2px;
     font-size: 0.8rem;
 }
