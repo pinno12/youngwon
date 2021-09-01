@@ -18,9 +18,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-
-
-
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -67,8 +64,6 @@
 
   <!-- import the webpage's stylesheet -->
   <link rel="stylesheet" href="./style.css" />
-
-
 </head>
 
 <body class="d-flex flex-column h-100" data-spy="scroll" data-target=".navbar" data-offset="0">
@@ -83,7 +78,7 @@
           <a class="nav-link fs-5" href="#ys-why" id="dawor-letter">식을 열며</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link fs-5" href="#ys-2" id="dawor-letter">사회, 정다워</a>
+          <a class="nav-link fs-5" href="#ys2" id="dawor-letter">사회자의 축사</a>
         </li>
         <li class="nav-item">
           <a class="nav-link fs-5" href="#ys3">엄마가 아들에게</a>
@@ -108,12 +103,12 @@
   </header>
   <main role="main" class="flex-shrink-0 mt-5">
     <div class="container-fluid">
-      <article class="row mb-5" id="welcome" style="height: 120vh;">
+      <article class="row mb-5" id="welcome" style="height: 120vh;" data-aos="flip-down">
         <div class="text-center">
-          <div style="transform: rotate(-45deg); display:inline-block; margin-top:56vh; margin-left: 30vw;">
+          <div style="transform: rotate(-45deg); display:inline-block; margin-top:56vh; margin-left: 20vw;">
             <small>2021. 11. 7 </small><br>
             <h1><span style="color: ;">S + Y</span><br>
-              <br>승원 + 영주 평생 이어갑니다.
+              <br>영주 + 승원 평생 이어갑니다.
             </h1><small>
               <a href="tel:+01091357110">신부에게 전화하기</a>&nbsp;
               <a href="tel:+01047339296">신랑에게 전화하기</a>&nbsp;
@@ -133,9 +128,10 @@
 
       <article class="row">
         <div class="col-lg-6 bg-here justify-content-center">
-          <img src="img/1.png" class="w-100">
-          <img src="img/1.png" class="w-50">
-          <img src="img/1.png" class="w-100">
+          <img src="img/1.JPG" class="w-100">
+          <img src="img/2.JPG" class="w-50 rounded mx-auto d-block">
+          <img src="img/3.JPG" class="w-25 rounded float-start">
+          <img src="img/4.JPG" class="w-25 rounded float-end">
         </div>
 
 
@@ -150,11 +146,11 @@
               <span class="fs-4">승원</span>
             </p>
             <p>
-              남궁찬 ✿ 이연주 <small>장남 </small>영주<a href="tel:+01047339296"><i class="phone icon"></i></a>&nbsp;
+              남궁찬 ✿ 이연주 <small>장남 </small>영주<a href="tel:01047339296"><i class="phone icon"></i></a>&nbsp;
             </p>
 
             <p>
-              정용준 ✿ 최선자 <small>막내딸 </small>승원<a href="tel:+01091357110"><i class="phone icon"></i></a>&nbsp;
+              정용준 ✿ 최선자 <small>막내딸 </small>승원<a href="tel:01091357110"><i class="phone icon"></i></a>&nbsp;
             </p>
 
 
@@ -170,101 +166,105 @@
                 </div>
                 <div class="content">
                   <div class="transition hidden">
-                  <div class="row">
-                    <div class="col">
-                      박영주 카카오뱅크 3333-01-4006692
-                      <div class="ui mini button" onclick='copyAccount("3333-01-4006692")'>
-                        계좌번호 복사
-                      </div>
-                    </div>
-                    <div class="col">
-                      이연주 하나은행 372-910064-89007
-                      <div class="ui mini button bg-here" onclick='copyAccount("372-910064-89007")'>
-                        계좌번호 복사
-                      </div>
-                    </div>
-                  </div>
-                  </div>
-                  </div>
-
-                  <div class="title">
-                    <i class="dropdown icon"></i>
-                    신부측 계좌번호
-                  </div>
-                  <div class="content">
-                    <div class="transition hidden">
                     <div class="row">
                       <div class="col">
-                        정승원 우리은행 010-9135-7110
-                        <div class="ui mini button" onclick='copyAccount("010-9135-7110")'>
+                        박영주 카카오뱅크 3333-01-4006692
+                        <div class="ui mini button" onclick='copyAccount("3333-01-4006692")'>
                           계좌번호 복사
                         </div>
                       </div>
                       <div class="col">
-                        정용준 하나은행 372-910064-89007
+                        이연주 하나은행 372-910064-89007
                         <div class="ui mini button bg-here" onclick='copyAccount("372-910064-89007")'>
                           계좌번호 복사
                         </div>
                       </div>
                     </div>
+                  </div>
+                </div>
+
+                <div class="title">
+                  <i class="dropdown icon"></i>
+                  신부측 계좌번호
+                </div>
+                <div class="content">
+                  <div class="transition hidden">
+                    <div class="row">
+                      <div class="col">
+                        정승원 우리은행 010-9135-7110
+                        <div class="ui mini button" onclick='copyAccount("우리은행 010-9135-7110")'>
+                          계좌번호 복사
+                        </div>
+                      </div>
+                      <div class="col">
+                        정용준 하나은행 372-910064-89007
+                        <div class="ui mini button bg-here" onclick='copyAccount("우리은행 372-910064-89007")'>
+                          계좌번호 복사
+                        </div>
+                      </div>
                     </div>
                   </div>
+                </div>
               </div>
-
-          
-
           </section>
-      
-<article id = "ys-why" class = "mt-5">
-  <h2 class="ui horizontal divider header text-here">
-    🌸
-   식을 열며
-  </h2>
 
-  <div class="ui raised segment">
-같이 가정을 꾸리려고 해요.<br />
-서로 단 걸 좋아합니다 치즈케익을 먹고 스콘을 같이 구워요.<br />
-서로 헬스를 좋아합니다. 헬스장 쉰 것도 모르고 운동화 챙겨 나간 날은 공 친 날입니다.
-그럴 땐 맛집 카페로 발을 옮기죠.
-서로 설거지와 청소를 합니다. 영주가 그릇을 달그락거리며 식기세척기에 넣습니다. 승원은 식기를 빼서 선반에 정리합니다. 이렇게 가족이 되어 살아가고 있습니다.
-우리는 서로 토론 상대이자 좋은 동반자이자 여행자인 걸 알았습니다.
-앞으로도 서로의 신발을 신으며 네 개의 눈으로 세상을 여행하고자 합니다<br />
-
-법륜 스님 말씀대로 반을 내어주며, 살겠습니다.<br />
-이 글을 쓰는 이 순간에도 사실 떨립니다. 미래는 누구도 속단할 수 없으니까요. 하지만 지금 이 순간의 행복을 오래오래 느끼고 싶었습니다.<br />
-약속합니다. 서로를 아끼며 살겠습니다.<br />
-<br />
-2년 전에 시작한 인연을 앞으로도 소중히 여기겠습니다.<br />
-1주일에 3일은 만나서 데이트를 했어요. 나머지 평일에는 잠은 잘 잤는지, 밥은 잘 먹었는지 전화나 영상통화를 했는데요.<br />
-매일 매일 시시 각각 묻기 위해 같이 살기로 했습니다.<br />
-
-영주<br />
-승원<br />
-
-이름에서 보이는 영원을 여기에 서약하려고 합니다.<br />
-이 글을 보시는 여러분 앞에서 약속하겠습니다.<br />
-서로를 만난 인연에 감사하며 살겠습니다.<br />
-저희 서약에 따뜻한 눈길과 격려를 주신다면 더 힘찬 출발이 될 것입니다.<br />
-<br />
-이 자리를 빌어 남궁찬과 이연주의 아들 박영주에서, 정용준과 최선자의 딸 정승원에서,<br />
-남편 박영주와 아내 정승원으로 거듭나고자 합니다.<br />
-여기에 여러분의 성원이 있다면 더욱 신이 날거에요.<br />
-<br />
-죄송스럽게도, 열 분 이상의 식사 자리를 마련하는게 다분히 조심스럽고 걱정스러워 저희 내외는 식장에서 인사드리지 않기로 했습니다.<br />
-신부의 부모님과 오빠들 그리고 신랑의 부모님만 모여 조촐히 밥 한끼를 먹습니다. 너그럽게 봐 주셨으면 좋겠습니다<br />
-  </div>
-</article>
-
-          <article id="ys2">
-            
+          <article id="ys-why" class="mt-5 heart-c" data-aos="fade-up">
             <h2 class="ui horizontal divider header text-here">
               🌸
-           사회자의 말
+              식을 열며
             </h2>
 
+            <div class="ui raised segment fs-5 lh-lg bg-here">
+              같이 가정을 꾸리려고 해요.<br />
+              서로 단 걸 좋아합니다 치즈케익을 먹고 스콘을 같이 구워요.<br />
+              서로 헬스를 좋아합니다. 헬스장 쉰 것도 모르고 운동화 챙겨 나간 날은 공 친 날입니다.
+              그럴 땐 맛집 카페로 발을 옮기죠.
+              서로 설거지와 청소를 합니다. 영주가 그릇을 달그락거리며 식기세척기에 넣습니다. 승원은 식기를 빼서 선반에 정리합니다. 이렇게 가족이 되어 살아가고 있습니다.
+              우리는 서로 토론 상대이자 좋은 동반자이자 여행자인 걸 알았습니다.
+              앞으로도 서로의 신발을 신으며 네 개의 눈으로 세상을 여행하고자 합니다<br />
+
+              법륜 스님 말씀대로 반을 내어주며, 살겠습니다.<br />
+              이 글을 쓰는 이 순간에도 사실 떨립니다. 미래는 누구도 속단할 수 없으니까요. 하지만 지금 이 순간의 행복을 오래오래 느끼고 싶었습니다.<br />
+              약속합니다. 서로를 아끼며 살겠습니다.<br />
+              <br />
+              2년 전에 시작한 인연을 앞으로도 소중히 여기겠습니다.<br />
+              1주일에 3일은 만나서 데이트를 했어요. 나머지 평일에는 잠은 잘 잤는지, 밥은 잘 먹었는지 전화나 영상통화를 했는데요.<br />
+              매일 매일 시시 각각 묻기 위해 같이 살기로 했습니다.<br />
+
+              <span class="fs-1">영</span>주<br />
+              승<span class="fs-1 lh-1">원</span><br />
+
+              이름에서 보이는 영원을 여기에 서약하려고 합니다.<br />
+              이 글을 보시는 여러분 앞에서 약속하겠습니다.<br />
+              서로를 만난 인연에 감사하며 살겠습니다.<br />
+              저희 서약에 따뜻한 눈길과 격려를 주신다면 더 힘찬 출발이 될 것입니다.<br />
+              <br />
+              이 자리를 빌어 남궁찬과 이연주의 아들 박영주에서, 정용준과 최선자의 딸 정승원에서,<br />
+              남편 박영주와 아내 정승원으로 거듭나고자 합니다.<br />
+              여기에 여러분의 성원이 있다면 더욱 신이 날거에요.<br />
+              <br />
+              죄송스럽게도, 열 분 이상의 식사 자리를 마련하는게 다분히 조심스럽고 걱정스러워 저희 내외는 식장에서 인사드리지 않기로 했습니다.<br />
+              신부의 부모님과 오빠들 그리고 신랑의 부모님만 모여 조촐히 밥 한끼를 먹습니다. 너그럽게 봐 주셨으면 좋겠습니다<br />
+            </div>
+          </article>
+
+          <article id="ys2" class="my-5">
+            <h2 class="ui horizontal divider header text-here">
+              <span class="" style="
+              border-left: 5px solid #FDE0DC;
+          "> </span> &nbsp;&nbsp;&nbsp;
+              사회자의 말&nbsp;&nbsp;&nbsp;
+
+              <span class="" style="
+              border-left: 5px solid #FDE0DC;
+          "> </span>
+            </h2>
+
+
+
             <div class="ui piled segment">
-              <h4 class="ui header fs-1"> 2021년 11월 가을앞에서 신랑 박영주군과 신부 정승원 양의 뜻깊은 결혼을 알립니다.</h4>
-              <p class="lh-lg fs-2">
+              <h4 class="ui header fs-4"> 2021년 11월 가을앞에서 신랑 박영주군과 신부 정승원 양의 뜻깊은 결혼을 알립니다.</h4>
+              <p class="lh-lg fs-5">
                 어려운 시기에도 귀한분들에게 기쁜 소식을 알리고자 자리를 마련하기 위해 노력한 신랑 신부를 위해 아낌없이 축하해주시길 바랍니다. <br />
                 <br />
                 2년전 우연한 계기로 만나 조금씩 마음을 열기 시작하였고 기쁠때나 슬플때나 곁을 지키며 서로의 우산이 되어 주었습니다. <br />
@@ -294,52 +294,32 @@
           <p>...</p>
           <h4 id="ys5">Fifth heading</h4>
           <p>...</p>
-          <section id = "ys6" class = "row">
-            <div class="accordion" id="accordionPanelsStayOpenExample">
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                    신랑은 뭐하는 사람이에요?
-                  </button>
-                </h2>
-                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
-                  <div class="accordion-body">
-                    <strong>패션 디자이너에요. </strong> 
-                옷을 생산하고 관리하는 직함도 있지만 제 눈엔 옷 디자인할 때가 제일 신기합니다. 답례품도 신랑 가족이 만든 맨투맨, 반팔티, 후드 중에 골라서 드립니다.
-        
-                  </div>
-                </div>
+          <section id="ys6" class="row">
+            <div class="ui styled fluid accordion">
+              <div class="active title">
+                <i class="dropdown icon"></i>
+                신랑은 뭐하는 사람이에요?
               </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                    어디 살아요? 
-                  </button>
-                </h2>
-                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
-                  <div class="accordion-body">
-                    <strong>   연희동이요. </strong> 신촌과 연남동 맛집에 눈이 휘둥그레해 집니다. 
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                    신혼 여행은 얼루 가나요?
-                  </button>
-                </h2>
-                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
-                  <div class="accordion-body">
-   
-                    오스트리아요. 예약을 작년 초에 했었는데요.  내년 5월로 겨우겨우 미뤘는데 갈 수 있을 지 모르겠어요. 희망은 버리지 않고 있습니다.
+              <div class="active content">
+                <strong>패션 디자이너에요. </strong> 옷을 생산하고 관리하는 일도 하구요. 제 눈엔 옷 디자인할 때가 제일 신기합니다. 답례품도 신랑 가족이 만든 맨투맨, 반팔티, 후드
+                중에 골라서 드립니다.
 
-                  </div>
-                </div>
-              </div>        
+              </div>
+              <div class="title">
+                <i class="dropdown icon"></i>
+                어디 살아요?
+              </div>
+              <div class="content">
+                <strong> 연희동이요. </strong> 신촌과 연남동 맛집에 눈이 휘둥그레해 집니다. </div>
+              <div class="title">
+                <i class="dropdown icon"></i>
+                신혼 여행은 얼루 가나요?
+              </div>
+              <div class="content">
+
+                오스트리아요. 예약을 작년 초에 했었는데요. 내년 5월로 겨우겨우 미뤘는데 갈 수 있을 지 모르겠어요. 희망은 버리지 않고 있습니다.
+              </div>
             </div>
-
-
-
           </section>
 
           <section class="row" id="ys7">
@@ -350,9 +330,22 @@
 
           </section>
         </div>
-
-
-
+      </article>
+      <article class = "row">
+        <div class="card bg-dark text-white">
+          <img src="img/1.JPG" class="card-img" alt="...">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Y + S</h5>
+            <p class="card-text">여기까지 읽고 계신 하객 여러분께 감사와 사랑을 전합니다.
+            </p>
+            <p class="card-text">이것으로 저희의 결혼식을 마칩니다.
+              ​
+              청첩장인줄 알았는데 놀라셨죠?
+              되도록이면 한 분 한 분 답례품인 옷을 들고 여러분께 덕담 한마디 듣고자 찾아가려고 합니다. 
+              못찾아 뵙는 분들은 옷을 택배로 보내드립니다. 
+              </p>
+          </div>
+        </div>
       </article>
 
 
@@ -371,9 +364,9 @@
       </div>
     </div>
   </div>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="script.js"></script>
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
     crossorigin="anonymous"></script>

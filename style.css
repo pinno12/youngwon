@@ -16,11 +16,7 @@
     margin-top: 2em;
 }
 
-/* div{
-    cursor: url('img/cake.png'), auto;
- } */
-
- div {
+ .heart-c {
    cursor: url(img/heart-c.png), auto;
 }
 
@@ -43,7 +39,7 @@
     color: #FDE0DC !important;
 }
 
-.bg-here {
+.bg-here, .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
     background-color: #FDE0DC !important;
     
 }
