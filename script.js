@@ -4,8 +4,20 @@ function copyAccount(val) {
   /* Get the text field */
   /* Copy the text inside the text field */
   navigator.clipboard.writeText(val);
+  alert("복사되었습니다:)");
   
 }
+
+{/* <script type="application/javascript">
+    var loadCounter = 0;
+    var loaded = function() {
+        loadCounter += 1;
+        if (loadCounter === 2) {
+            $("iframe").attr("height", "500px");
+            $(window).scrollTo(315,0)
+        }
+    }
+</script> */}
 
 $('.ui.accordion')
   .accordion()

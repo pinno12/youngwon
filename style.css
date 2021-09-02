@@ -48,6 +48,7 @@
     .bd-placeholder-img-lg {
         font-size: 3.5rem;
     }
+ 
 }
 body {
     position: relative; 
@@ -211,8 +212,12 @@ a {
         position: inherit;
     }
     
-
-    
+body{
+    overflow-x: auto;
+}
+    #first-text{
+        margin-left: 0vw !important;
+    }
     .service  h1,
     .service h2,
     .service  h3,
