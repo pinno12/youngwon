@@ -68,7 +68,7 @@
 
 <body class="d-flex flex-column h-100" data-spy="scroll" data-target=".navbar" data-offset="0">
   <header>
-    <nav id="navbar-example2" class="navbar navbar-light px-3 fixed-top" style="background-color: white;">
+    <nav id="navbar-example2" class="navbar navbar-light px-3 fixed-top shadow-sm" style="background-color: white; width:100vw;">
       <a class="navbar-brand" href="/">Y + S</a>
       <ul class="nav nav-pills">
         <li class="nav-item">
@@ -76,15 +76,15 @@
         </li>
         <li class="nav-item">
           <a class="nav-link fs-5" href="#ys-why" id="dawor-letter">식을 열며</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link fs-5" href="#ys2" id="dawor-letter">사회자의 축사</a>
-        </li>
+        </li>      
         <li class="nav-item">
           <a class="nav-link fs-5" href="#ys3">엄마가 아들에게</a>
         </li>
         <li class="nav-item">
           <a class="nav-link fs-5" href="#ys4">아빠가 딸에게</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-5" href="#ys2" id="dawor-letter">사회자의 축사</a>
         </li>
         <li class="nav-item">
           <a class="nav-link fs-5" href="#ys5">친구들 한마디</a>
@@ -105,14 +105,14 @@
     <div class="container-fluid">
       <article class="row mb-5" id="welcome" style="height: 120vh;" data-aos="flip-down">
         <div class="text-center">
-          <div style="transform: rotate(-45deg); display:inline-block; margin-top:56vh; margin-left: 20vw;" id = "first-text">
+          <div style="transform: rotate(-45deg); display:inline-block; margin-top:56vh; margin-left: 54vw;" id = "first-text">
             <small>2021. 11. 7 </small><br>
             <h1><span>y + s</span><br>
               <br>영주 + 승원<br />
               평생 더해 갑니다.
             </h1><small>
-              <a href="tel:01091357110">신부에게 문자하기</a>&nbsp;
-              <a href="tel:01047339296">신랑에게 문자하기</a>&nbsp;
+              <a href="sms:01091357110">신부에게 문자하기</a>&nbsp;
+              <a href="sms:01047339296">신랑에게 문자하기</a>&nbsp;
             </small>
           </div>
         </div>
@@ -169,11 +169,19 @@
                   <div class="transition hidden">
                     <div class="row">
                       <div class="col">
-                        박영주 카카오뱅크 3333-01-4006692
+                        박영주 카카오뱅크 3333-01-4006692 <br />
                         <div class="ui mini button" onclick='copyAccount("카카오뱅크 3333-01-4006692")'>
                           계좌번호 복사
                         </div>
                       </div>
+
+                      <div class="col">
+                        이연주 하나은행 372-910064-89007
+                        <div class="ui mini button bg-here" onclick='copyAccount("하나은행 372-910064-89007")'>
+                          계좌번호 복사
+                        </div>
+                      </div>
+                      
                     </div>
                   </div>
                 </div>
@@ -186,7 +194,7 @@
                   <div class="transition hidden">
                     <div class="row">
                       <div class="col">
-                        정승원 우리은행 010-9135-7110
+                        정승원 우리은행 010-9135-7110 <br />
                         <div class="ui mini button" onclick='copyAccount("우리은행 010-9135-7110")'>
                           계좌번호 복사
                         </div>

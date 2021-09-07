@@ -22,7 +22,11 @@ function copyAccount(val) {
 $('.ui.accordion')
   .accordion()
 ;
-
+$('.ui.sticky')
+  .sticky({
+    context: '#context'
+  })
+;
 $('.tool-tip').popup();
 
 function bg_change(color) {

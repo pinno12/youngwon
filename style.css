@@ -203,6 +203,16 @@ a {
 #sidebar{
     width:50%;
 }
+/* 
+ html {
+    overflow: scroll;
+    overflow-x: hidden;
+} */
+/* ::-webkit-scrollbar {
+    width: 0;  
+
+}  */
+
 
 /* 모바일  */
 @media only screen and (max-width: 992px) {
@@ -216,7 +226,7 @@ body{
     overflow-x: auto;
 }
     #first-text{
-        margin-left: 0vw !important;
+        margin-left: -8vw !important;
     }
     .service  h1,
     .service h2,
