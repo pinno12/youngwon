@@ -7,17 +7,24 @@ function copyAccount(val) {
   alert("복사되었습니다:)");
   
 }
+// Wrap every letter in a span
+var textWrapper = document.querySelector('.ml10 .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
-{/* <script type="application/javascript">
-    var loadCounter = 0;
-    var loaded = function() {
-        loadCounter += 1;
-        if (loadCounter === 2) {
-            $("iframe").attr("height", "500px");
-            $(window).scrollTo(315,0)
-        }
-    }
-</script> */}
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml10 .letter',
+    rotateY: [-90, 0],
+    duration: 1300,
+    delay: (el, i) => 45 * i
+  }).add({
+    targets: '.ml10',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+
 
 $('.ui.accordion')
   .accordion()
