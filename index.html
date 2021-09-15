@@ -68,8 +68,8 @@
 
 <body class="d-flex flex-column h-100" data-spy="scroll" data-target=".navbar" data-offset="0">
   <header>
-    <nav id="navbar-example2" class="navbar navbar-light px-3 fixed-top shadow-sm" style="background-color: white; width:100vw;">
-      <a class="navbar-brand text-here mx-auto fw-bolder" href="#welcome">y + s</a>
+    <nav id="navbar-example2" class="navbar navbar-light px-3 fixed-top shadow-sm" style="background-color: white;">
+      <a class="navbar-brand text-here mx-auto fw-bolder fs-3" href="#welcome">y + s</a>
       <ul class="nav nav-pills">
         <li class="nav-item">
           <a class="nav-link fs-5 active" href="#ys1">청첩장</a>
@@ -138,15 +138,16 @@
     "></div>
       <article class="row">
         <div class="col-lg-6 bg-here justify-content-center">
-       
-          <div style="display: inline-block;">
+       <div class = "row" data-masonry='{"percentPosition": true }'>
+      
 
           <img src="img/1.JPG" class="w-100">
           <img src="img/2.JPG" class="w-50 rounded mx-auto d-block">
           <img src="img/3.JPG" class="w-25 rounded float-start">
           <img src="img/4.JPG" class="w-25 rounded float-end">
 
-        </div>
+        
+        <div class = "col-sm-6 col-lg-4 mb-4">
           <div class="ui rotate reveal">
             <div class="visible content">
               <img src="img/l1.png" class="ui  image">
@@ -154,6 +155,14 @@
             <div class="hidden content">
               <img src= "img/l2.png" class="ui  image">
             </div>
+          </div>
+        </div>
+        <div class = "col-sm-6 col-lg-4 mb-4">
+          <img src="img/6.png" class = "w-100 rounded">
+        </div>
+        <div class = "col-sm-6 col-lg-4 mb-4">
+          <img src="img/7.png" class = "w-100 rounded">
+        </div>
           </div>
         </div>
 
@@ -287,7 +296,7 @@
 <div data-aos="zoom-out-down">	엄마의 일터로 달려와 엄마볼에 백번을 넘게 뽀뽀를 했어	<br />	</div>
 <div data-aos="zoom-out-down">	뽀뽀하면 반드시 너의볼에 뽀뽀를 해주어야 했는데	<br />	</div>
 <div data-aos="zoom-out-down">	엄마일에 지장있어 대충해주면 어린아이가 엄마한테	<br />	</div>
-<div data-aos="zoom-out-down">	진심이 없다고 진심이 전해질떄까지 뽀뽀를 강요해	<br />	</div>
+<div data-aos="zoom-out-down">	진심이 없다고 진심이 전해질 때까지 뽀뽀를 강요해	<br />	</div>
 <div data-aos="zoom-out-down">	너보다 더 많이 뽀뽀를 하면서 행복한 날들을 보냈다	<br />	</div>
 <div data-aos="zoom-out-down">	우리 아가는 어린아이 답지 않게 감동과 기쁨을	<br />	</div>
 <div data-aos="zoom-out-down">	소소한 일들에서행복을 엄마에게 주었다.그런 아가가	<br />	</div>
@@ -464,6 +473,7 @@
     integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
     crossorigin="anonymous"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
 
 
 </body>
