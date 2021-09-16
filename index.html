@@ -138,16 +138,24 @@
     "></div>
       <article class="row">
         <div class="col-lg-6 bg-here justify-content-center">
-       <div class = "row" data-masonry='{"percentPosition": true }'>
-      
-
-          <img src="img/1.JPG" class="w-100">
-          <img src="img/2.JPG" class="w-50 rounded mx-auto d-block">
-          <img src="img/3.JPG" class="w-25 rounded float-start">
-          <img src="img/4.JPG" class="w-25 rounded float-end">
-
+       <div class = "grid">
+         <div class = "grid-sizer"></div>
+         
         
-        <div class = "col-sm-6 col-lg-4 mb-4">
+<div class = "grid-item">
+          <img src="img/1.JPG" class="w-100">
+        </div>
+        <div class = "grid-item">
+          <img src="img/2.JPG" class="w-50 rounded mx-auto d-block">
+        </div>
+        <div class = "grid-item">
+          <img src="img/3.JPG" class="w-25 rounded float-start">
+        </div>
+        <div class = "grid-item">
+          <img src="img/4.JPG" class="w-25 rounded float-end">
+</div>
+        
+        <div class = "grid-item">
           <div class="ui rotate reveal">
             <div class="visible content">
               <img src="img/l1.png" class="ui  image">
@@ -157,12 +165,21 @@
             </div>
           </div>
         </div>
-        <div class = "col-sm-6 col-lg-4 mb-4">
-          <img src="img/6.png" class = "w-100 rounded">
-        </div>
-        <div class = "col-sm-6 col-lg-4 mb-4">
-          <img src="img/7.png" class = "w-100 rounded">
-        </div>
+
+          <img src="img/6.png" class = "w-50 rounded grid-item">
+
+
+          <img src="img/7.png" class = "w-50 rounded grid-item">
+ 
+
+          <img src="img/8.png" class = "w-50 rounded grid-item">
+ 
+
+          <img src="img/9.png" class = "w-50 rounded grid-item">
+ 
+
+          <img src="img/10.png" class = "w-50 rounded">
+ 
           </div>
         </div>
 
@@ -472,9 +489,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
     crossorigin="anonymous"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
-
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
 
 </body>
 
