@@ -1,7 +1,8 @@
 /* ---- grid ---- */
 
 .grid {
-    background: #DDD;
+    /* background: #FDE0DC; */
+    margin: 0 auto;
   }
   
   /* clear fix */
@@ -15,7 +16,7 @@
   
   .grid-sizer,
   .grid-item {
-    width: 33.333%;
+    width: 50%;
   }
   
   .grid-item {
@@ -24,7 +25,8 @@
   
   .grid-item img {
     display: block;
-    max-width: 100%;
+    /* max-width: 100%; */
+    width: 90%;
   }
   
 
@@ -273,6 +275,8 @@ a {
     
 body{
     overflow-x: auto;
+    margin:0px;
+    
 }
     #first-text{
         margin-left: -8vw !important;

@@ -28,12 +28,14 @@ anime.timeline({loop: true})
 var $grid = $('.grid').masonry({
   itemSelector: '.grid-item',
   percentPosition: true,
-  columnWidth: '.grid-sizer'
+  columnWidth: '.grid-sizer',
+  isFitWidth: true,
+  
 });
 // layout Masonry after each image loads
-$grid.imagesLoaded().progress( function() {
-  $grid.masonry();
-});  
+// $grid.imagesLoaded().progress( function() {
+//   $grid.masonry();
+// });  
 
 
 $('.ui.accordion')
