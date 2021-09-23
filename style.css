@@ -3,6 +3,7 @@
 .grid {
     /* background: #FDE0DC; */
     margin: 0 auto;
+    
   }
   
   /* clear fix */
@@ -14,10 +15,30 @@
   
   /* ---- .grid-item ---- */
   
-  .grid-sizer,
-  .grid-item {
+  .grid-sizer,.grid-item {
     width: 50%;
+    /* width: calc(25%); */
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
   }
+  
+   /* .grid-sizer {
+    width:  20%;
+                @media screen and (max-width: 768px) {
+                  width: 50%;
+              }
+              @media screen and (min-width: 769px) and (max-width: 1399px) {
+                  width: 25%;
+              }
+              @media screen and (min-width: 1400px) and (max-width: 1899px) {
+                  width: 20%;
+              }
+              @media screen and (min-width: 1900px) {
+                  width: 16.66%;
+              }
+  } */
+  
   
   .grid-item {
     float: left;
@@ -267,6 +288,9 @@ a {
 
 /* 모바일  */
 @media only screen and (max-width: 992px) {
+    /* #img-gallery{
+        width:100%;
+    } */
 
     #sidebar{
         width: 100%;
