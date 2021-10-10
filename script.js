@@ -1,14 +1,31 @@
 AOS.init();
 
-function copyAccount(val) {
-  /* Get the text field */
-  /* Copy the text inside the text field */
-  navigator.clipboard.writeText(val);
-  alert("복사되었습니다:)");
+// function copyAccount(val) {
+//   /* Get the text field */
+//   /* Copy the text inside the text field */
+//   navigator.clipboard.writeText(val);
+//   alert("복사되었습니다:)");
   
+// }
+
+function copyAccount(val) {
+
+  var copyText = val;
+  var el = document.createElement('textarea');
+  el.value = copyText;
+  el.setAttribute('readonly', '');
+  el.style = {
+      position: 'absolute',
+      left: '-9999px'
+  };
+  document.body.appendChild(el);
+  el.select();
+  document.execCommand('copy');
+  document.body.removeChild(el);
+
+  alert("복사되었습니다:)");
 }
-
-
+  
 
 $('.ui.accordion')
   .accordion()
